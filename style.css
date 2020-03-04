@@ -1,0 +1,154 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* animation: animate 2s ease-in-out; */
+    scroll-behavior: smooth;
+}
+#biography{
+    text-align: center;
+    background-color: #97d4e9;
+    color: white;
+    padding: 5%;
+    margin: 0;
+}
+#description > p{
+    font-size: 1.05em;
+}
+#name{
+    font-size: 150px;
+}
+#occupation{
+    font-size: 60px;
+    animation: animate 1s ease-in;
+}
+#caption{
+    font-size: 50px;
+    font-weight: bold;
+    color: #97d4e9;
+    text-align: center;
+}
+img{
+    border-radius: 70%;
+    height: 250px;
+}
+#image-wrapper, #profile{
+    float: left;
+}
+#image-wrapper{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    animation: slider 2s forwards;
+}
+#profile{
+    width: 60%;
+    animation: animate 5s ease-in-out;
+
+}
+#details{
+    overflow: auto;
+    padding: 5%;
+    position: relative;
+
+}
+section{
+    overflow: auto;
+    padding: 1%;
+    margin: 1% 0;
+}
+.statistics{
+    float: left;
+    width: 33%;
+    font-size: 20px;
+    margin: 5px 0;
+    border-radius: 15px / 50px;
+    background-color: #97d4e9;
+
+}
+.number,.platform,.update{
+    text-align: center;
+}
+footer{
+    background-color: #97d4e9;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    transform: rotateX(90);
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    .statistics{
+        width: 100%;
+        font-size: 20px;
+    }
+    #image-wrapper, #profile{
+        width: 100%;
+    }
+    #name{
+        font-size: 300%;
+    }
+    #occupation{
+        font-size: 150%;
+    }
+    #caption{
+        font-size: 33px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+    #profile{
+        width: 66%;
+        text-align: center;
+    }
+    /* #caption{
+        font-size: 33px;
+    } */
+    .statistics{
+        overflow: auto;
+        font-size: 16px;
+    }
+    #details{
+        padding: 5% 4% 0;
+    }
+    #image-wrapper{
+        padding: 10% 0;
+        width: 34%;
+    }
+    #name{
+        letter-spacing: 43px;
+        font-size: 125px;
+    }
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slider{
+    0% {
+        left: -2000px;
+    }
+    70%{
+        left: 25%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+/* @keyframes dropper{
+    0%{
+        top: 20%;
+    }
+    100%{
+        top: 30%;
+    }
+} */
