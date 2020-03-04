@@ -148,7 +148,7 @@ a{
 
  @keyframes dropper{
     0%{
-        top: -100px;
+        top: -500px;
     }
     100%{
         top: 0;
